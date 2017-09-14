@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dominik Mądro - Portfolio</title>
+    <!-- CSS -->
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&amp;subset=latin-ext" rel="stylesheet">
+</head>
+<body id="top-site">
+  <header class="bg-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-nav">
+        <div class="container">
+        <a class="navbar-brand" href="#top-site">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#top-site">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">O MNIE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">REALIZACJE</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+    <h1>WITAJ <br><span>W MOIM PORTOFOLIO<span></h1>
+    <p>MAM NA IMIĘ DOMINIK I JESTEM POCZĄTKUJĄCYM FRONT-END'OWCEM</p>
+  </header>
+  <main>
+    <section class="about-me" id="about-me">
+      <div class="container">
+        <h2>KILKA SŁÓW O MNIE</h2>
+        <p>Cześć, jestem młodym chłopakiem pochłoniętym pasją programowania, który niedawno skończył szkołę i wybiera się na studia informatyczne. Od 2 lat interesuję się kodowaniem witryn od strony Front-End'u. Technologie, którymi posługuję się sprawnie to HTML5, CSS3 oraz RWD. Uczę się też Bootstrapa oraz JavaScript, w przyszłości planuję też zacząć tworzyć szablony m.in. do Wordpress'a. Moje skromne realizacje które wykonałem w wolnym czasie można zobaczyć poniżej. Dziękuję! </p>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2>MOJE REALIZACJE</h2>
+        <div class="row gallery">
+          <div class="col-xl-4 col-lg-6">
+            <div class="hovereffect">
+                <img class="img-responsive" src="img/work1.png" alt="">
+                <div class="overlay">
+                  <ul>
+                   <li><a class="info" href="https://myniko.github.io/treehouse/" target="_blank">LIVE</a></li>
+                   <li><a class="info" href="https://github.com/myniko/treehouse" target="_blank">GITHUB</a></li>
+                 </ul>
+                </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6">
+            <div class="hovereffect">
+                <img class="img-responsive" src="img/work2.png" alt="">
+                <div class="overlay">
+                  <ul>
+                   <li><a class="info" href="https://myniko.github.io/agency/" target="_blank">LIVE</a></li>
+                   <li><a class="info" href="https://github.com/myniko/agency" target="_blank">GITHUB</a></li>
+                 </ul>
+                </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6">
+            <div class="hovereffect">
+                <img class="img-responsive" src="img/work3.png" alt="">
+                <div class="overlay">
+                  <ul>
+                   <li><a class="info" href="https://myniko.github.io/tajem/" target="_blank">LIVE</a></li>
+                   <li><a class="info" href="https://github.com/myniko/tajem" target="_blank">GITHUB</a></li>
+                 </ul>
+                </div>
+            </div>
+          </div>
+            <div class="col-xl-4 col-lg-6">
+            <div class="hovereffect">
+                <img class="img-responsive" src="img/work4.png" alt="">
+                <div class="overlay">
+                  <ul>
+                   <li><a class="info" href="https://myniko.github.io/bakery" target="_blank">LIVE</a></li>
+                   <li><a class="info" href="https://github.com/myniko/bakery" target="_blank">GITHUB</a></li>
+                 </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>d.madro97@gmail.com <span class="copy">&copy 2017<span></p>
+    </div>
+  </footer>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script>
+    function checkScroll(){
+      var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+      if($(window).scrollTop() > startY){
+          $('.navbar').addClass("scrolled");
+      }else{
+          $('.navbar').removeClass("scrolled");
+      }
+    }
+
+    if($('.navbar').length > 0){
+        $(window).on("scroll load resize", function(){
+            checkScroll();
+        });
+    }
+  </script>
+  <script>
+    $(function() {
+      // Desired offset, in pixels
+      var offset = -130;
+      // Desired time to scroll, in milliseconds
+      var scrollTime = 800;
+
+      $('a[href^="#"]').click(function() {
+          // Need both `html` and `body` for full browser support
+          $("html, body").animate({
+              scrollTop: $( $(this).attr("href") ).offset().top + offset
+          }, scrollTime);
+
+          // Prevent the jump/flash
+          return false;
+      });
+    });
+  </script>
+</body>
+</html>
